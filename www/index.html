@@ -1,41 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Интернет-магазин</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sotik</title>
+
 </head>
+
 <body>
-  <header>
-    <h1>Интернет-магазин</h1>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Корзина</a></li>
-      <li><a href="#">О нас</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="./images/logo.png" width="13%">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <section>
-    <h2>Популярные товары</h2>
-    <div class="product">
-      <img src="product1.jpg" alt="Товар 1">
-      <h3>Товар 1</h3>
-      <p>Цена: $10</p>
-      <button>Добавить в корзину</button>
-    </div>
-    <div class="product">
-      <img src="product2.jpg" alt="Товар 2">
-      <h3>Товар 2</h3>
-      <p>Цена: $20</p>
-      <button>Добавить в корзину</button>
-    </div>
-  </section>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Главная
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link" href="#features">Услуги
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">Каталог
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
 
-  <footer>
-    <p>&copy; 2023 Интернет-магазин. Все права защищены.</p>
-  </footer>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="wellcome">
+                <div class="wellcomeMsg">
+                    <div class="headTag">Сотик</div>
+                    <div class="subTag">Лучший магазин электроники</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectionHead">Услуги</div>
+                        <hr>
+                        <br>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <h4>Гаджеты</h4>
+                            <p>В разделе "Гаджеты" представлены современные и инновационные устройства, такие как смартфоны, 
+                                планшеты, наушники и умные часы.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                            </div>
+                            <h4>Аксессуары</h4>
+                            <p>В разделе "Аксессуары" вы найдете все необходимые дополнительные принадлежности для ваших гаджетов, 
+                                такие как чехлы, защитные стекла, зарядные устройства и наушники. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-wrench" aria-hidden="true"></i>
+                            </div>
+                            <h4>Ремонт</h4>
+                            <p>Раздел "Ремонт" предлагает услуги по восстановлению и ремонту гаджетов, 
+                                включая замену экранов, батарей и другие ремонтные работы. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-minus-square" aria-hidden="true"></i>
+                            </div>
+                            <h4>Программа лояльности</h4>
+                            <p>У нас есть программа лояльности, которая предлагает клиентам эксклюзивные предложения,
+                                 скидки и бонусы при каждой покупке. Присоединяйтесь к нам, чтобы получать больше преимуществ и
+                                  удовольствия от покупок. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="parallex-section">
+            <div class="parallex" id="parallex-set-1"></div>
+        </section>
+
+        <section id="shop">
+            <div class="container">
+                <div class="sectionHead">Каталог</div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./images/iphone.jpg" width="100%">
+                            </div>
+                            <div class="item-box-head">iPhone</div>
+                            <div class="item-box-sub-text">Все модели iPhone.</div>
+                            <button class="btn item-box-btn">Купить сейчас</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./images/tablet.jpg" width="100%">
+                            </div>
+                            <div class="item-box-head">iPad</div>
+                            <div class="item-box-sub-text">Все модели iPad.</div>
+                            <button class="btn item-box-btn">Купть сейчас</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./images/AirPods.jpg" width="100%">
+                            </div>
+                            <div class="item-box-head">AirPods</div>
+                            <div class="item-box-sub-text">Все модели AirPods.</div>
+                            <button class="btn item-box-btn">Купить сейчас</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./images/watches.jpg" width="100%">
+                            </div>
+                            <div class="item-box-head">Apple Watch</div>
+                            <div class="item-box-sub-text">Все модели Apple Watch.</div>
+                            <button class="btn item-box-btn">Купить сейчас</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sectionSubHead">Акции</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/iphone13.jpg" alt="phone">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    от 62,000руб/
+                                    <span style="color:rgb(173, 11, 11)">(-39%)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/ipad129.jpg" alt="tablet">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    от 50,000руб/
+                                    <span style="color:rgb(173, 11, 11)">(-27%)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/airpods2.jpg" alt="buds">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    от 9,500руб/
+                                    <span style="color:rgb(173, 11, 11)">(-32%)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/watchse.jpg" alt="watches">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    от 27000руб/
+                                    <span style="color:rgb(173, 11, 11)">(-45%)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/iphoneCase.jpg" alt="case">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    от 650руб/
+                                    <span style="color:rgb(173, 11, 11)">(-17%)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/ps5.jpg" alt="ps5">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    от 40000/
+                                    <span style="color:rgb(173, 11, 11)">(-21%)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="parallex-section">
+            <div class="parallex" id="parallex-set-3"></div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="sectionHead">О нас</div>
+                <hr>
+                <br>
+                <p>
+                  Мы делаем все, чтобы ассоциироваться со словами «доступные цены» и «качественный сервис»
+                   и выбираем для наших покупателей самое лучшее. Конечно, с душой и любовью!
+
+                  Благодаря тому, что мы сделали акцент на online-формат, наши покупатели всегда могли познакомиться
+                   с любым продуктом ближе на наших страницах в социальных сетях, в том числе: Instagram, VK, Telegram.
+                    А в совокупности с тем, что в социальных сетях связаться с нами стало еще проще и быстрее, 
+                    оформить заказ и сориентироваться по наличию в магазине гораздо удобнее. Это очень важно в мире высоких скоростей.
+                     Бесплатная помощь наших специалистов в переносе данных и создании учетной записи позволяет выйти из магазина
+                      с уже готовым к работе устройстве.
+                  
+                  Сейчас в ассортименте представлено почти 90% продукции компании Apple.
+                  
+                  У нас есть удобные программы кредитования и рассрочки, а так же trade-in - услуга обмена старого устройства 
+                  на новое с доплатой. Все для комфортной покупки!
+                  
+                  Желание максимально идти в ногу со временем и уделять большое внимание качественному обслуживанию дало свои плоды.
+                   За прошедшие годы нашими клиентами стали более 30 000 людей и компаний, за что мы их очень благодарим и 
+                   продолжаем делать все, чтобы выстраивать долгосрочные отношения!
+                </p>
+            </div>
+        </section>
+
+
+        <section class="parallex-section">
+            <div class="parallex" id="parallex-set-2"></div>
+        </section>
+
+
+
+        <section id="contact">
+            <div class="container">
+                <div class="sectionHead">Контакты</div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-2">
+                                <h4 class="sectionSubSubHead text-capitalize">Написать сообщение</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required placeholder="Имя*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" required placeholder="Email*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" required placeholder="Телефон*">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" required placeholder="Ваше сообщение*"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-info" type="submit">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="sectionSubSubHead">Контакты</h4>
+                        <ul class="list-unstyled">
+                            <li>Мосвка, Россия</li>
+                            <li>пр. Вернадского, 78</li>
+                            <li>Phone: +7 (952) 812-52-52</li>
+                            <li>Email: medvedev.a.a3@edu.mirea.ru</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          Все права защищены.
+            <span style="color:#f20056;">
+                Sotik inc.
+            </span>
+        </div>
+    </footer>
+
 </body>
+
 </html>
